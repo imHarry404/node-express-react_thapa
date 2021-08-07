@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  {{!-- importing head from partials folder using head.hbs  ,,this is only for hbs , pug and ejs have their own way--}}
+  {{>head}}
+  <body>
+
+{{! importing nav from partials folder  using hbs module idea}}
+    {{>nav}}
+    {{errorComment}}
+      {{!-- importing footer from partials --}}
+     {{>footer}}
+    <!-- Bootstrap core JS-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    ></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
